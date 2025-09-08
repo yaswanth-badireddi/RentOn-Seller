@@ -10,6 +10,7 @@ import {
     Settings, 
     LogOut 
 } from "lucide-react";
+import {useAuthStore} from "../store/authStore";
 import { cn } from "@/utils/cn";
 
 // Simplified menu items - only the 8 you requested
@@ -75,6 +76,7 @@ const menuItems = [
 export const Sidebar = forwardRef(({ collapsed }, ref) => {
     const navigate = useNavigate();
     const location = useLocation();
+    const{user,logout}=useAuthStore();
 
     const handleNavigation = (item) => {
         if (item.action === 'logout') {
@@ -85,9 +87,7 @@ export const Sidebar = forwardRef(({ collapsed }, ref) => {
     };
 
     const handleLogout = () => {
-        localStorage.removeItem('authToken');
-        localStorage.removeItem('user');
-        navigate('/login');
+        logout();
     };
 
     const isActive = (path) => {
@@ -216,10 +216,10 @@ export const Sidebar = forwardRef(({ collapsed }, ref) => {
                         </div>
                         <div className="flex-1 min-w-0">
                             <p className="text-sm font-medium text-slate-900 dark:text-white truncate">
-                                User Name
+                                {user.name}
                             </p>
                             <p className="text-xs text-slate-500 dark:text-slate-400 truncate">
-                                user@example.com
+                                {user.email}
                             </p>
                         </div>
                     </div>
