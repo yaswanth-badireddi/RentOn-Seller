@@ -1,7 +1,8 @@
 import { create } from "zustand";
 import axios from "axios";
 
-const API_URL = "http://localhost:5050/api/auth";
+// const API_URL = "http://localhost:5050/api/auth";
+const API_URL="https://renton-seller.onrender.com/api/auth";
 
 axios.defaults.withCredentials = true;
 
