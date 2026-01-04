@@ -115,21 +115,21 @@ JWT_SECRET=your_jwt_secret
 EMAIL_USER=your_email
 EMAIL_PASS=your_email_password
 
-##▶️ Installation & Setup
-###1️⃣ Clone the Repository
+## ▶️ Installation & Setup
+### 1️⃣ Clone the Repository
 git clone https://github.com/yaswanth-badireddi/RentOn-Seller.git
 cd RentOn-Seller
 
-###2️⃣ Install Dependencies
-####Client
+### 2️⃣ Install Dependencies
+#### Client
 cd client
 npm install
 
-####Server
+#### Server
 cd server
 npm install
 
-###3️⃣ Run the Application
+### 3️⃣ Run the Application
 Start Backend
 cd server
 npm start
@@ -139,13 +139,13 @@ cd client
 npm run dev
 
 
-###Frontend runs on:
+### Frontend runs on:
 👉 http://localhost:3000 (or Vite port)
 
-###Backend runs on:
+### Backend runs on:
 👉 http://localhost:5000
 
-##Pages Included
+## Pages Included
 
 Sign Up Page
 Login Page
@@ -154,7 +154,7 @@ Seller Dashboard
 Add Product Page
 Product Listing Page
 
-##🔐 Authentication Flow
+## 🔐 Authentication Flow
 
 JWT-based authentication
 
@@ -164,7 +164,7 @@ Secure password hashing
 
 Email-based password reset
 
-##🎯 Use Case
+## 🎯 Use Case
 
 This project is ideal for:
 
@@ -176,14 +176,14 @@ MERN stack learning & portfolio
 
 Campus placements / internships
 
-##👨‍💻 Author
+## 👨‍💻 Author
 
 Yaswanth Kumar Badireddi
-###📧 Email: yaswanthbadireddi11@gmail.com
+### 📧 Email: yaswanthbadireddi11@gmail.com
 
-###🔗 GitHub: https://github.com/yaswanth-badireddi
+### 🔗 GitHub: https://github.com/yaswanth-badireddi
 
-##📌 Future Enhancements
+## 📌 Future Enhancements
 
 Customer-side application
 
